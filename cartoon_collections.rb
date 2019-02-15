@@ -1,9 +1,7 @@
 def roll_call_dwarves(dwarves) 
-     output = ""
    dwarves.each_with_index do|dwarve, idx|
-   output += " #{idx+1}.#{dwarve}"
+     puts "#{idx+1}.#{dwarve}"
    end 
-   puts output
 end
 
 def summon_captain_planet(planeteer_calls) # code an argument here
@@ -12,9 +10,7 @@ def summon_captain_planet(planeteer_calls) # code an argument here
 end
 
 def long_planeteer_calls(calls_long) # code an argument here
-  calls_long.any? do |word|
-    word.length > 4
-  end
+calls_long.any? { |call| call.length > 4 }
   # Your code here
 end
 
